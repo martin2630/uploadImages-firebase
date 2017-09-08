@@ -1,0 +1,12 @@
+<div class="row">
+
+  <div class="card-columns" >
+    <div class="card" *ngFor="let imagen of imagenes | async">
+      <img class="card-img-top" [src]="imagen.url" class="img-fluid img-thumbnail">
+      <div class="card-body">
+        <h4 class="card-title">{{ imagen.nombre }}</h4>
+      </div>
+    </div>
+  </div>
+
+</div>
